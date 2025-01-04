@@ -6,6 +6,8 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
+import com.wfa.middleware.utils.DataType;
+import com.wfa.middleware.utils.Pair;
 import com.wfa.parser.spi.IParserPlugin;
 
 @Component
@@ -13,8 +15,8 @@ import com.wfa.parser.spi.IParserPlugin;
 public class SampleParserPlugin implements IParserPlugin {
 
 	@Override
-	public Map<String, String> TokenizeLine() {
-		return new HashMap<String, String>();
+	public Map<String, Pair<Object, DataType>> TokenizeLine() {
+		return new HashMap<String, Pair<Object, DataType>>();
 	}
 
 	@Override
